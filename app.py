@@ -151,7 +151,7 @@ with tab3:
     
 with tab4:
     load_dotenv()
-    genai.configure(api_key=st.secrets["AIzaSyAo3Dck4194NU60tIygXTHR10YppZReeo0"])
+    genai.configure(api_key=st.secrets["GEMINI_API_KEY"])
     st.title(" AI Health Assistant")
     st.write("Describe your symptoms and get AI-powered health insights.")
     model_ai = genai.GenerativeModel("gemini-2.5-flash") 
